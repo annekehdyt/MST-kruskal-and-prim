@@ -54,22 +54,22 @@ BinaryHeap<br>
 ------------------------------------------------
 ## RUNNING THE PROGRAM INSTRUCTION
 ------------------------------------------------
-INPUT FILE : input each line by this format
-[Num of Vertices (NON-NEGATIVE INTEGER)]
-[SETS of VERTICES (STRING) separate with comma EXAMPLE : a,b,cc,d,e,ff,g]
-[Num of Edges (NON-NEGATIVE INTEGER)]
-[ADJACENCY LIST each line counts as one edge EXAMPLE : (a,b)=13 (STRING, NO SPACE IN BETWEEN)]
-
-TO EXECUTE USING CMD PROMPT :
-> java -jar MSTgraph.jar
-> ----Example----
-> ./[FILENAME] OR ./graph.txt OR /[SUB-FOLDER]/[FILENAME]
-> [put your input file]
-
-OUTPUT FILE : Default
-Prims output file : primout.txt
-Kruskal output file : kruskalout.txt
-
+INPUT FILE : input each line by this format<br>
+[Num of Vertices (NON-NEGATIVE INTEGER)]<br>
+[SETS of VERTICES (STRING) separate with comma EXAMPLE : a,b,cc,d,e,ff,g]<br>
+[Num of Edges (NON-NEGATIVE INTEGER)]<br>
+[ADJACENCY LIST each line counts as one edge EXAMPLE : (a,b)=13 (STRING, NO SPACE IN BETWEEN)]<br>
+<br>
+TO EXECUTE USING CMD PROMPT :<br>
+> java -jar MSTgraph.jar<br>
+> ----Example----<br>
+> ./[FILENAME] OR ./graph.txt OR /[SUB-FOLDER]/[FILENAME]<br>
+> [put your input file]<br>
+<br>
+OUTPUT FILE : Default<br>
+Prims output file : primout.txt<br>
+Kruskal output file : kruskalout.txt<br>
+<br>
 You can modify the output file name by go to the main method under MSTgraph class, and put the string fileOut in each void method below:
 graph.kruskalMST("./kruskalout.txt");
 graph.primMST("./primout.txt");
@@ -79,54 +79,55 @@ graph.primMST("./primout.txt");
 
 
 
-Example:
-Graph.txt
+Example:<br>
+Graph.txt<br>
 ____________________________________
-9
-a,b,c,d,e,f,g,h,i
-14
-(a,b)=4
-(b,c)=8
-(c,d)=7
-(d,e)=9
-(e,f)=10
-(f,g)=2
-(g,h)=1
-(h,a)=8
-(b,h)=11
-(h,i)=7
-(c,i)=2
-(i,g)=6
-(c,f)=4
-(d,f)=14
+9<br>
+a,b,c,d,e,f,g,h,i<br>
+14<br>
+(a,b)=4<br>
+(b,c)=8<br>
+(c,d)=7<br>
+(d,e)=9<br>
+(e,f)=10<br>
+(f,g)=2<br>
+(g,h)=1<br>
+(h,a)=8<br>
+(b,h)=11<br>
+(h,i)=7<br>
+(c,i)=2<br>
+(i,g)=6<br>
+(c,f)=4<br>
+(d,f)=14<br>
 ____________________________________
 
-kruskal out
+kruskal out<br>
 ------------------------------------
 2017-11-26 15:33:05.738
 
-# edge : 8 
-(g,h)=1
-(c,i)=2
-(f,g)=2
-(c,f)=4
-(a,b)=4
-(c,d)=7
-(h,a)=8
-(d,e)=9
-
-Execute Duration : 
-0.00406 seconds (in seconds)
-4060843 ns (in nano seconds)
-# of iteration (while loop) : 11
+Num edge : 8<br> 
+(g,h)=1<br>
+(c,i)=2<br>
+(f,g)=2<br>
+(c,f)=4<br>
+(a,b)=4<br>
+(c,d)=7<br>
+(h,a)=8<br>
+(d,e)=9<br>
+<br>
+Execute Duration : <br>
+0.00406 seconds (in seconds)<br>
+4060843 ns (in nano seconds)<br>
+Num of iteration (while loop) : 11<br>
 
 ------------------------------------
 primOut
 ------------------------------------
 2017-11-26 15:33:05.742
-
-# edge : 8 
-(a,b)=4
-(b,c)=8
-(c,i)=2
-(c,f)=4
+<br>
+Num edge : 8<br> 
+(a,b)=4<br>
+(b,c)=8<br>
+(c,i)=2<br>
+(c,f)=4<br>
+<br>
