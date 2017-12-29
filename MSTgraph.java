@@ -600,19 +600,38 @@ public class MSTgraph {
 	 * @param args
 	 *************************************************/
 	public static void main(String[] args){
-		String fileName;
-		Scanner scanner = new Scanner( System.in );
+		//String fileName;
+		//Scanner scanner = new Scanner( System.in );
 		
-		System.out.println("Please put the path to the file: " );
-		System.out.println("----Example----");
-		System.out.println("./[FILENAME] OR ./graph.txt OR /[SUB-FOLDER]/[FILENAME]");
-
-		fileName = scanner.nextLine();
+		//System.out.println("Please put the path to the file: " );
+		//System.out.println("----Example----");
+		//System.out.println("./[FILENAME] OR ./graph.txt OR /[SUB-FOLDER]/[FILENAME]");
 		
-		MSTgraph graph = new MSTgraph(fileName);
-		graph.kruskalMST("./kruskalout.txt");
-		graph.primMST("./primout.txt");
-
-		scanner.close();
+		//fileName = scanner.nextLine();
+		//fileName = "graph.txt";
+		
+		String[] filename = {"./graph3.txt", "./graph4.txt","./graph5.txt","./graph6.txt","./graph7.txt","./graph8.txt","./graph9.txt","./graph10.txt" };
+		String[] kruskalOut = {"./kruskal3.txt", "./kruskal4.txt","./kruskal5.txt","./kruskal6.txt","./kruskal7.txt","./kruskal8.txt","./kruskal9.txt","./kruskal10.txt" };
+		String[] primOut = {"./prim3.txt", "./prim4.txt","./prim5.txt","./prim6.txt","./prim7.txt","./prim8.txt","./prim9.txt","./prim10.txt" };
+		MSTgraph[] graph = new MSTgraph[filename.length];
+		//MSTgraph graph = new MSTgraph(fileName);
+		
+		System.out.println(graph.length);
+		for(int j=0; j<graph.length; j++)
+			graph[j] = new MSTgraph(filename[j]);
+		
+		System.out.println("Init done");
+		for(int i=0; i<graph.length; i++) {
+			System.out.println(i + " kruskal now");
+			graph[i].kruskalMST(kruskalOut[i]);
+			System.out.println(i + " prim now");
+			graph[i].primMST(primOut[i]);
+			System.out.println(filename[i] + " DONE");
+		}
+		
+		//graph.kruskalMST("./kruskalout.txt");
+		//graph.primMST("./primout.txt");
+		System.out.println("Done Completely");
+		//scanner.close();
 	}
 }
