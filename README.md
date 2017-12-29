@@ -20,44 +20,44 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.131-b11, mixed mode)
 -----------------------------------
 All the classes are build in nested classes under MSTgraph class. 
 
-MSTgraph
---int find(DisjointSet sets[], int parent)
---void Union(DisjointSet sets[], int v_1, int v_2)
---int indexOfElement(String[] sets, String element)
---Edge[] removeEdge(Edge[] edges, Edge tobeRemoved)
---String[] removeVertex(String[] vertices, String tobeRemoved)
---writeFile(Edge[] edge, String filename, int iter, long duration)
---String[] getFile(String filePath)
---void kruskalMST(String fileOut)
---void primMST(String fileOut)
---void main(String[] args)
-Constants
-Edge
---void addEdgeVal(String source, String dest, int weight)
---void removeEdge()
---int getWeight()
---Object clone()
-DisjointSet
-BinaryHeap
---boolean isEmpty()
---void clear()
---int parent(int i)
---getChild(int parentidx, int childidx)
---insert(Edge e)
---Edge findMin()
---Edge getDeleteMin()
---void perc_up(int elementidx)
---void perc_down(int elementidx)
---int minChild(int elementedx)
---void printHeap()
+MSTgraph <br>
+--int find(DisjointSet sets[], int parent)<br>
+--void Union(DisjointSet sets[], int v_1, int v_2)<br>
+--int indexOfElement(String[] sets, String element)<br>
+--Edge[] removeEdge(Edge[] edges, Edge tobeRemoved)<br>
+--String[] removeVertex(String[] vertices, String tobeRemoved)<br>
+--writeFile(Edge[] edge, String filename, int iter, long duration)<br>
+--String[] getFile(String filePath)<br>
+--void kruskalMST(String fileOut)<br>
+--void primMST(String fileOut)<br>
+--void main(String[] args)<br>
+Constants<br>
+Edge<br>
+--void addEdgeVal(String source, String dest, int weight)<br>
+--void removeEdge()<br>
+--int getWeight()<br>
+--Object clone()<br>
+DisjointSet<br>
+BinaryHeap<br>
+--boolean isEmpty()<br>
+--void clear()<br>
+--int parent(int i)<br>
+--getChild(int parentidx, int childidx)<br>
+--insert(Edge e)<br>
+--Edge findMin()<br>
+--Edge getDeleteMin()<br>
+--void perc_up(int elementidx)<br>
+--void perc_down(int elementidx)<br>
+--int minChild(int elementedx)<br>
+--void printHeap()<br>
 
 ------------------------------------------------
 ## RUNNING THE PROGRAM INSTRUCTION
 ------------------------------------------------
 INPUT FILE : input each line by this format
-[# of Vertices (NON-NEGATIVE INTEGER)]
+[Num of Vertices (NON-NEGATIVE INTEGER)]
 [SETS of VERTICES (STRING) separate with comma EXAMPLE : a,b,cc,d,e,ff,g]
-[# of Edges (NON-NEGATIVE INTEGER)]
+[Num of Edges (NON-NEGATIVE INTEGER)]
 [ADJACENCY LIST each line counts as one edge EXAMPLE : (a,b)=13 (STRING, NO SPACE IN BETWEEN)]
 
 TO EXECUTE USING CMD PROMPT :
